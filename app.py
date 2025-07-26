@@ -10,7 +10,7 @@ import streamlit as st
 from openai import OpenAI
 
 # Hugging Face API token (use os.environ or directly paste in testing)
-HF_TOKEN = "##########"
+HF_TOKEN = os.getenv("HF_TOKEN")
 
 client = OpenAI(
     base_url="https://router.huggingface.co/v1",
